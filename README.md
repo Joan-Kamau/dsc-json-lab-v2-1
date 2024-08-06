@@ -40,7 +40,10 @@ Assign the result of `json.load` to the variable name `data`.
 
 
 ```python
-# Your code here
+import json
+
+with open(nyc_2001_campaign_finance.json) as f:
+  data = json.load(f)
 ```
 
 Recall the overall structure of this dataset:
